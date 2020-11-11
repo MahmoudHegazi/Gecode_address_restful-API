@@ -45,7 +45,7 @@ def getSheet(address):
         return address_query
     URL = "https://maps.googleapis.com/maps/api/geocode/json"
     location = filter_address(address)
-    appkey = "AIzaSyA33olk9yeGwJ8pevkPGdd4t5yLnYno_wc"
+    appkey = "your_appid"
     PARAMS = {'address':location,'key':appkey}
     r = requests.get(url = URL, params = PARAMS)
     data = r.json()
